@@ -136,14 +136,14 @@ Resources:
     Type: AWS::ElasticBeanstalk::Application
     Properties:
       ApplicationName: "SampleAWSElasticBeanstalkApplication"
-      Description: "AWS Elastic Beanstalk NOJEJS Sample Application"
+      Description: "AWS Elastic Beanstalk NODEJS Sample Application"
 
   SampleBeanstalkGitLabApplicationVersion:
     Type: AWS::ElasticBeanstalk::ApplicationVersion
     Properties:
       ApplicationName:
         Ref: "SampleBeanstalkGitLabApplication"
-      Description: "AWS Elastic Beanstalk NOJEJS Sample Application Version"
+      Description: "AWS Elastic Beanstalk NODEJS Sample Application Version"
       SourceBundle:
         # S3Bucket: !Sub "elasticbeanstalk-samples-${AWS::Region}"
         S3Bucket: "aws-bigdata-blog"
